@@ -1,0 +1,293 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding-bottom: 80px;
+    background: linear-gradient(to left, #b3e5fc, #007ab3, #04afff);
+    background-size: 200% 100%; /* Cambiado a 200% 100% */
+    animation: gradientAnimation 20s linear infinite; /* Animación lineal */
+    color: #2c3e50;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  .mi-seccion { /* Cambiado a .mi-seccion, ajusta según tu clase */
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+  }
+  
+  .mi-seccion.visible {
+    opacity: 1;
+  }
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 100% 0%; /* Inicia desde la derecha */
+    }
+    100% {
+        background-position: 0% 0%; /* Termina a la izquierda */
+    }
+}
+header {
+    background-image: url('image\ copy.png'); /* Ruta de tu imagen */
+    background-size: cover; /* Ajusta la imagen al tamaño del header */
+    background-position: center; /* Centra la imagen */
+    color: white; /* Asegura que el texto sea visible */
+    text-align: center; /* Centra el texto */
+    padding: 2rem; /* Agrega espacio alrededor del texto */
+    position: relative; /* Necesario para z-index si agregas más elementos */
+}
+
+
+header h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para mejorar la legibilidad */
+}
+
+header p {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra para mejorar la legibilidad */
+}
+main {
+    padding: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto; /* Centrado en pantallas grandes */
+}
+
+section {
+    background-color: rgba(253, 253, 253, 0.8); /* Fondo blanco con transparencia */
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #1565c0; /* Azul más oscuro para títulos */
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #bbdefb; /* Borde sutil */
+    padding-bottom: 0.5rem;
+}
+
+.plato {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px dashed #cfd8dc; /* Borde punteado */
+}
+
+/*PLATO DE PIZZAS*/
+
+.platoo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.platooo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 2px dashed #cfd8dc; /* Borde punteado */
+}
+
+.plato:last-child {
+    border-bottom: none;
+}
+
+.precio {
+    font-weight: 600;
+    color: #35b53b; /* Tono verde para precios */
+}
+
+.menu-inferior {
+    position: fixed;
+    bottom: 0;
+    left: 5%;
+    right: 5%;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
+    border-top: 2px solid #81c784; /* Tono verde claro */
+    box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.15);
+    padding: 1.2rem 0;
+    border-radius: 10px 10px 0 0; /* Esquinas redondeadas arriba */
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #37474f; /* Tono gris oscuro */
+    font-size: 0.95rem;
+    transition: transform 0.2s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-3px);
+}
+
+.menu-icon {
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0.6rem;
+    border-radius: 5px;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    main {
+        padding: 1.5rem;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu-inferior {
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding: 0.8rem 0;
+        border-radius: 0; /* Sin esquinas redondeadas en móvil */
+    }
+}
+
+
+/*CORRECIONES*/
+
+.CENTRAR {
+    text-align: center;
+}
+
+.text1 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.welcome {
+    font-family: "Meow Script", cursive;
+    color: white;
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/*SOCIAL*/
+
+    .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+    padding: 10px; /* Añadido padding para dar espacio alrededor de los iconos */
+}
+
+    .social-icon {
+    display: inline-block;
+    width: 40px; /* Aumentado el tamaño de los iconos */
+    height: 40px; /* Aumentado el tamaño de los iconos */
+    background-size: contain; /* Cambiado a 'contain' para que los iconos se ajusten sin recortarse */
+    background-repeat: no-repeat; /* Asegura que el icono no se repita */
+    background-position: center; /* Centra el icono dentro del contenedor */
+    margin: 0 15px; /* Aumentado el margen entre los iconos */
+}
+
+    .facebook {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/600px-2023_Facebook_icon.svg.png?20231011122028');
+}
+
+    .instagram {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/640px-Instagram_logo_2022.svg.png');
+}
+
+.whatsapp {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/640px-WhatsApp.svg.png');
+}
+
+    .maps {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Google_Maps_icon_%282020%29.svg/640px-Google_Maps_icon_%282020%29.svg.png');
+}
+
+/*AREA DE IMAGENES DE RESTAURANT*/
+
+.restaurant-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas de igual ancho */
+    gap: 10px; /* Espacio entre los elementos */
+    padding: 20px;
+  }
+  
+  .gallery-item {
+    border-radius: 10px;
+    overflow: hidden; /* Asegura que la imagen no sobresalga del borde redondeado */
+    position: relative; /* Para posicionar el nombre */
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block; /* Elimina el espacio adicional debajo de la imagen */
+  }
+  
+  .item-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente */
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Media Queries para Responsividad */
+  @media (max-width: 768px) {
+    .restaurant-gallery {
+      grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas medianas */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .restaurant-gallery {
+      grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
+    }
+  }
+
+/*INPUT DE BUSQUEDA*/
+
+.search-container {
+    display: flex;
+    border: 1px solid #ccc; /* Borde del contenedor */
+    border-radius: 5px; /* Bordes redondeados */
+    overflow: hidden; /* Asegura que los elementos internos no sobresalgan */
+    margin-bottom: 20PX;
+  }
+  
+  .search-input {
+    flex-grow: 1; /* Permite que el input ocupe el espacio disponible */
+    padding: 10px;
+    border: none; /* Elimina el borde del input */
+    outline: none; /* Elimina el borde de enfoque */
+  }
+  
+  .search-icon {
+    display: flex;
+    align-items: center; /* Centra verticalmente la imagen */
+    justify-content: center; /* Centra horizontalmente la imagen */
+    padding: 10px;
+    background-color: #f0f0f0; /* Color de fondo del icono */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar por encima */
+  }
+  
+  .search-icon img {
+    width: 20px; /* Ajusta el tamaño de la imagen según necesites */
+    height: 20px; /* Ajusta el tamaño de la imagen según necesites */
+  }
