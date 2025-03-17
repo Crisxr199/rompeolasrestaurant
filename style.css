@@ -226,7 +226,7 @@ section h2 {
     display: flex;
     justify-content: center;
     margin-bottom: 0px;
-    padding: 10px;
+    border: 1px solid white;
 }
 
 .social-icon {
@@ -236,14 +236,14 @@ section h2 {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    margin: 0 15px;
+    margin: 0 25px;
 }
 
 .social-name {
-    font-size: 14px; /* Tamaño de fuente */
+    font-size: 12px; /* Tamaño de fuente */
     color: white; /* Color del texto */
-    margin-top: 5px; /* Espacio entre el icono y el texto */
-    /* Puedes agregar más estilos aquí según sea necesario */
+    margin-top: 5px; 
+    font-weight: bold;
 }
     .facebook {
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/600px-2023_Facebook_icon.svg.png?20231011122028');
@@ -340,8 +340,8 @@ section h2 {
 /*OTRAS CORRECCIONES*/
 
 .fondoo {
-    background-color: #2c3e50;
-    width: 250px;
+    background-color: rgba(44, 62, 80, 0.8); /* Fondo con transparencia */
+    width: 270px;
     height: 30px;
     align-content: center;
     padding: 5px 10px 5px 10px;
@@ -349,4 +349,6 @@ section h2 {
     margin: auto;
     box-shadow: 0 0 8px 0 #2c3e50;
     font-weight: bold;
+    backdrop-filter: blur(2px); /* Agrega el efecto de desenfoque */
+    -webkit-backdrop-filter: blur(2px); /* Prefijo para navegadores WebKit (Safari) */
 }
