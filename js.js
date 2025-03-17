@@ -1,7 +1,7 @@
 
 //ONCLIKS
 function click1() {
-    window.open('https://web.whatsapp.com/send/?phone=584129205451', '_blank');
+    window.open('https://walink.co/efa8d7', '_blank');
 }
 
 //SCROLL
