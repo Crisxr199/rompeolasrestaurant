@@ -176,14 +176,14 @@ section h2 {
     font-family: "Meow Script", cursive;
     color: white;
     text-align: center;
-    font-size: 80px;
+    font-size: 60px;
     margin-bottom: 10px;
     margin-top: 10px;
 }
 
 @media (min-width: 400px) {
     .welcome {
-        font-size: 70px;
+        font-size: 40px;
     }
 }
 
