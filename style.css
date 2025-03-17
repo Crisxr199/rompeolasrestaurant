@@ -141,19 +141,19 @@ section h2 {
 /* Ajustes para pantallas menores a 400px */
 @media (max-width: 400px) {
     .menu-inferior {
-        left: 2%;
-        right: 2%;
-        padding: 0.8rem 0;
+        left: 0;
+        right: 0;
+        padding: 0.4rem 0;
     }
 
     .menu-item {
-        font-size: 0.85rem;
+        font-size: 0.65rem;
     }
 
     .menu-icon {
-        width: 30px;
-        height: 30px;
-        margin-bottom: 0.4rem;
+        width: 20px;
+        height: 20px;
+        margin-bottom: 0.2rem;
     }
 }
 
