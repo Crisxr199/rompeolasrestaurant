@@ -101,7 +101,6 @@ section h2 {
     font-weight: 600;
     color: #35b53b; /* Tono verde para precios */
 }
-
 .menu-inferior {
     position: fixed;
     bottom: 0;
@@ -109,11 +108,11 @@ section h2 {
     right: 5%;
     display: flex;
     justify-content: space-around;
-    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
-    border-top: 2px solid #81c784; /* Tono verde claro */
+    background-color: rgba(255, 255, 255, 0.9);
+    border-top: 2px solid #81c784;
     box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.15);
     padding: 1.2rem 0;
-    border-radius: 10px 10px 0 0; /* Esquinas redondeadas arriba */
+    border-radius: 10px 10px 0 0;
 }
 
 .menu-item {
@@ -121,7 +120,7 @@ section h2 {
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    color: #37474f; /* Tono gris oscuro */
+    color: #37474f;
     font-size: 0.95rem;
     transition: transform 0.2s ease;
 }
@@ -139,28 +138,62 @@ section h2 {
     border-radius: 5px;
 }
 
-/* Diseño responsivo */
-@media (max-width: 768px) {
-    main {
-        padding: 1.5rem;
+/* Ajustes para pantallas menores a 400px */
+@media (max-width: 400px) {
+    .menu-inferior {
+        left: 2%;
+        right: 2%;
+        padding: 0.8rem 0;
     }
 
-    section {
-        padding: 1.5rem;
+    .menu-item {
+        font-size: 0.85rem;
+    }
+
+    .menu-icon {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 0.4rem;
     }
 }
 
-@media (max-width: 600px) {
+/* Ajustes para pantallas menores a 350px */
+@media (max-width: 350px) {
+    .menu-inferior {
+        left: 1%;
+        right: 1%;
+        padding: 0.6rem 0;
+    }
+
+    .menu-item {
+        font-size: 0.75rem;
+    }
+
+    .menu-icon {
+        width: 25px;
+        height: 25px;
+        margin-bottom: 0.3rem;
+    }
+}
+
+/* Ajustes para pantallas menores a 300px */
+@media (max-width: 300px) {
     .menu-inferior {
         left: 0;
         right: 0;
-        width: 100%;
-        padding: 0.8rem 0;
-        border-radius: 0; /* Sin esquinas redondeadas en móvil */
+        padding: 0.4rem 0;
+    }
+
+    .menu-item {
+        font-size: 0.65rem;
+    }
+
+    .menu-icon {
+        width: 20px;
+        height: 20px;
+        margin-bottom: 0.2rem;
     }
 }
-
-
 /*CORRECIONES*/
 
 .CENTRAR {
